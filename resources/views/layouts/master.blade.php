@@ -70,6 +70,12 @@
     </a>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="{{ route('gaji.index') }}">
+      <i class="mdi mdi-cash menu-icon"></i>
+      <span class="menu-title">Rekap Gaji</span>
+    </a>
+</li>
+  <li class="nav-item">
     <a class="nav-link" href="{{route('laporan.penjualan')}}">
       <i class="mdi mdi-file-chart menu-icon"></i>
       <span class="menu-title">Rekap Penjualan</span>
@@ -79,6 +85,12 @@
     <a class="nav-link" href="{{route('barang.index')}}">
       <i class="mdi mdi-cube menu-icon"></i>
       <span class="menu-title">Data Barang</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{{route('master-gaji.index')}}">
+      <i class="mdi mdi-account-cash menu-icon"></i>
+      <span class="menu-title">Master Gaji</span>
     </a>
   </li>
   <li class="nav-item">

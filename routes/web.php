@@ -32,6 +32,9 @@ Route::get('/', function () {
     return redirect('/dashboard');
 });
 
+Route::get('/gaji', [App\Http\Controllers\GajiController::class, 'index'])->name('gaji.index');
+Route::resource('master-gaji', App\Http\Controllers\GajiMasterController::class);
+
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 });
